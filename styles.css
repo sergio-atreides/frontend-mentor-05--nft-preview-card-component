@@ -1,0 +1,102 @@
+* {
+    --soft-blue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+    --very-dark-blue-body: hsl(217, 54%, 11%); /*main BG*/
+    --very-dark-blue-card: hsl(216, 50%, 16%); /*card BG*/
+    --very-dark-blue-line: hsl(215, 32%, 27%); /*line*/
+    --white: hsl(0, 0%, 100%);
+}
+body {
+    margin: 80px auto;
+    padding: 0;
+    font-family: 'Outfit', sans-serif;
+    background-color: var(--very-dark-blue-body);
+    font-size: 18px;
+}
+.card {
+    margin: 0 auto;
+    background-color: var(--very-dark-blue-card);
+    border: 0;
+    padding: 25px;
+    border-radius: 10px;
+    width: 20%;
+    min-width: 320px;
+}
+.card--img {
+    width: 100%;
+    border-radius: 10px;
+}
+.title {
+    font-size: 1.2em;
+    color: var(--white);
+    font-weight: 600;
+}
+.paragraph {
+    font-weight: 300;
+    color: var(--soft-blue);
+    margin-bottom: 10px;
+}
+.buy {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 7px;
+    margin-bottom: 5px;
+    border-bottom: 1px solid var(--soft-blue);
+}
+.buy--price,
+.buy--time,
+.author {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+}
+.buy--price_ethe,
+.buy--price_time,
+.author--name {
+    font-size: .9em;
+    margin-left: 7px;
+    font-weight: 400;
+}
+.buy--price_ethe {
+    color: var(--cyan);
+}
+.buy--price_time,
+.author--name {
+    color: var(--soft-blue);
+}
+.author--name_em {
+    color: var(--white);
+}
+.author--portrait {
+    border-radius: 100%;
+    border: 1px solid white;
+    width: 35px;
+    margin-right: 8px;
+}
+footer {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 80px auto;
+    font-size: 13px; 
+    width: 100%;
+    color: var(--white);
+}
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%);
+}
+
+@media(max-width: 450px) {
+    body {
+        margin: 20px auto;
+    }
+}
